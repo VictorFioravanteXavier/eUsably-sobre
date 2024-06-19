@@ -435,6 +435,34 @@ main .contato textarea{
     font-size: 0.8em;
   }
 
-@media (max-width: 600px) {
-    
+.fixed-button {
+    position: fixed;
+    bottom: 9%;
+    right: 5%;
+    padding: 10px;
+    background-color: #5768F3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 50px;
+    height: 50px;
+}
+
+.fixed-button.show {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
 }
