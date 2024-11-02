@@ -471,3 +471,13 @@ main .contato textarea{
     border-right: 15px solid transparent;
     border-bottom: 15px solid white;
 }
+
+@media (max-width: 768px) {
+    body {
+        justify-content: initial;
+    }
+
+    main{
+        width: auto;
+    }
+}
